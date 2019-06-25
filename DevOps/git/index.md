@@ -2,23 +2,36 @@
 
 #### Basic usage
 ```bash
+# Create/Init Project
 git init
 git init --bare
+git clone {url} {to path}
 
 git checkout {branch/commit}
 
+git add .
 git add {file}
+
 git commit -m {comment}
+git commit --amend # Change the last unpublished commit
 
 git status # Check current file change status
+```
+
+#### Tag
+```bash
+git tag {tag name} # Tag current commit
+git push --tags    # Publish tags
 ```
 
 #### Remote
 ```bash
 git remote add {remote} {url}
+git remote show {remote}
 git remote get-url {remote}
 git remote set-url {remote} {new url}
 
+git fetch
 git push {remote} {branch}
 git pull {remote} {branch}
 ```
@@ -33,6 +46,13 @@ git checkout -b {new branch}
 
 # Remove branch 
 git branch -d {branch}
+git branch -dr {branch} # Also delete on remote branch
+
+# List branches
+git branch -av
+
+# Track remote branch
+git checkout --track {remote/branch}
 ```
 
 
@@ -55,6 +75,9 @@ git log --stat --pretty=short --graph
 # Log file
 git log -- {filename}   # Show file history
 git log -p {filename}   # Show history with patch 
+
+# Blame 
+git blame {filename}    # Who changed what and when in <file>
 ```
 
 #### Select commit
