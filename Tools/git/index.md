@@ -178,3 +178,8 @@ git stash drop
 # Clear all stash
 git stash clear
 ```
+
+#### Assume file unchanged
+```
+git update-index --assume-unchanged file-name
+```
