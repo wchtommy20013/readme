@@ -1,0 +1,1 @@
+https://chrome.google.com/webstore/detail/uivision-kantu-for-chrome/gcbalfbdmfieckjlnblleoemohcganoc

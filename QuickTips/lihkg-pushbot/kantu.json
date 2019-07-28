@@ -1,0 +1,56 @@
+{
+    "Name": "Kantu PushBot",
+    "CreationDate": "2019-7-28",
+    "Commands": [
+      {
+        "Command": "open",
+        "Target": "https://lihkg.com/thread/1375450/page/7",
+        "Value": ""
+      },
+      {
+        "Command": "click",
+        "Target": "xpath=//*[@id=\"app\"]/nav/div[2]/div[2]/span[2]",
+        "Value": ""
+      },
+      {
+        "Command": "editContent",
+        "Target": "xpath=//*[@id=\"app\"]/div[5]/div[2]/div/div[2]/div[2]/div/div",
+        "Value": "push"
+      },
+      {
+        "Command": "if_v2",
+        "Target": "${!LastCommandOK}",
+        "Value": ""
+      },
+      {
+        "Command": "click",
+        "Target": "xpath=//*[@id=\"app\"]/div[5]/div[2]/div/div[3]/div[2]/a[2]",
+        "Value": ""
+      },
+      {
+        "Command": "else",
+        "Target": "",
+        "Value": ""
+      },
+      {
+        "Command": "editContent",
+        "Target": "xpath=//*[@id=\"app\"]/div[4]/div[2]/div/div[2]/div[2]/div/div",
+        "Value": "push"
+      },
+      {
+        "Command": "click",
+        "Target": "xpath=//*[@id=\"app\"]/div[4]/div[2]/div/div[3]/div[2]/a[2]",
+        "Value": ""
+      },
+      {
+        "Command": "end",
+        "Target": "",
+        "Value": ""
+      },
+      {
+        "Command": "pause",
+        "Target": "10000",
+        "Value": ""
+      }
+    ]
+  }
