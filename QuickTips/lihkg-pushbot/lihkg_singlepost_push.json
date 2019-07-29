@@ -3,14 +3,19 @@
   "CreationDate": "2019-7-29",
   "Commands": [
     {
-      "Command": "open",
-      "Target": "https://lihkg.com/thread/1378408/page/2",
-      "Value": ""
+      "Command": "storeEval",
+      "Target": "10000 +  Math.floor(Math.random()*50000) ",
+      "Value": "waittime"
     },
     {
       "Command": "storeEval",
-      "Target": "10000 +  Math.floor(Math.random()*90000) ",
-      "Value": "waittime"
+      "Target": "new Array('https://lihkg.com/thread/1375450/page/48')",
+      "Value": "arr"
+    },
+    {
+      "Command": "open",
+      "Target": "https://lihkg.com/thread/1375450/page/48",
+      "Value": ""
     },
     {
       "Command": "click",

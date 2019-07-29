@@ -1,0 +1,126 @@
+{
+  "Name": "Auto Push",
+  "CreationDate": "2019-7-29",
+  "Commands": [
+    {
+      "Command": "storeEval",
+      "Target": "3000 + Math.floor(Math.random()*7000) ",
+      "Value": "loopdelay"
+    },
+    {
+      "Command": "storeEval",
+      "Target": "10000 + Math.floor(Math.random()*50000) ",
+      "Value": "waittime"
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "!csvReadLineNumber"
+    },
+    {
+      "Command": "csvRead",
+      "Target": "lihkgpush.csv",
+      "Value": ""
+    },
+    {
+      "Command": "store",
+      "Target": "${!csvReadMaxRow}",
+      "Value": "max"
+    },
+    {
+      "Command": "store",
+      "Target": "1",
+      "Value": "i"
+    },
+    {
+      "Command": "while_v2",
+      "Target": "${i} <= ${max}",
+      "Value": ""
+    },
+    {
+      "Command": "store",
+      "Target": "${i}",
+      "Value": "!csvReadLineNumber"
+    },
+    {
+      "Command": "csvRead",
+      "Target": "lihkgpush.csv",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "action",
+      "Value": ""
+    },
+    {
+      "Command": "open",
+      "Target": "${!col1}",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"app\"]/nav/div[2]/div[2]/span[2]",
+      "Value": ""
+    },
+    {
+      "Command": "editContent",
+      "Target": "xpath=//*[@id=\"app\"]/div[5]/div[2]/div/div[2]/div[2]/div/div",
+      "Value": "push"
+    },
+    {
+      "Command": "if_v2",
+      "Target": "${!LastCommandOK}",
+      "Value": ""
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"app\"]/div[5]/div[2]/div/div[3]/div[2]/a[2]",
+      "Value": ""
+    },
+    {
+      "Command": "else",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "editContent",
+      "Target": "xpath=//*[@id=\"app\"]/div[4]/div[2]/div/div[2]/div[2]/div/div",
+      "Value": "push"
+    },
+    {
+      "Command": "click",
+      "Target": "xpath=//*[@id=\"app\"]/div[4]/div[2]/div/div[3]/div[2]/a[2]",
+      "Value": ""
+    },
+    {
+      "Command": "end",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "comment",
+      "Target": "action end",
+      "Value": ""
+    },
+    {
+      "Command": "storeEval",
+      "Target": "${i} + 1",
+      "Value": "i"
+    },
+    {
+      "Command": "pause",
+      "Target": "${loopdelay}",
+      "Value": ""
+    },
+    {
+      "Command": "endWhile",
+      "Target": "",
+      "Value": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "${waittime}",
+      "Value": ""
+    }
+  ]
+}
