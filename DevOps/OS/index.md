@@ -16,6 +16,9 @@ ls /etc/rc*.d/
 
 ## Performances
 ```bash
+# Check directory used space
+du -h --max-depth=1 | sort -g
+
 # Check disk space
 df -h
 
@@ -25,6 +28,14 @@ free -m
 # GUI RAM monitor
 sudo apt-get install htop
 htop
+```
+
+### Alias and useful commands
+
+```bash
+# Sorted list of memory usage
+alias dirsorted='du -h --max-depth=1 | sort -g'
+alias memsorted='ps -o pid,user,%mem,command ax | sort -b -k3 -r | less'
 ```
 
 ## Ubuntu directory structure
