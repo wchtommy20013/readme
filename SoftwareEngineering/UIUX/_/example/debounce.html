@@ -1,0 +1,25 @@
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+</head>
+
+<body>
+ <h3>Enter yout email address:</h3><input/>
+ <p class="email"><span class="text"></span></p>
+</body>
+
+<script>
+
+$('input').on('keyup', _.debounce(
+ function(e) {
+  var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if (regex.test(this.value)) {
+   $('.email .text').text("valid email").css("color", "green")
+  } else {
+   $('.email .text').text("invalid email").css("color", "red")
+  }
+ },500)
+)
+
+</script>
