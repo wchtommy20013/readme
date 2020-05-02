@@ -11,15 +11,15 @@
 
     Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
-2. Builder
+2. [Builder](./Builder/index.md)
 
     Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.
 
-3. Dependency Injection
+3. [Dependency Injection](./DependencyInjection/index.md)
     
     A class accepts the objects it requires from an injector instead of creating the objects directly.
 
-4. Factory method
+4. [Factory method](./FactoryMethod/index.md)
    
     Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
