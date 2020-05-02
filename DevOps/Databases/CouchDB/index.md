@@ -19,4 +19,4 @@ vi /opt/couchdb/etc/local.ini
 ```
 
 
-[https://docs.couchdb.org/en/stable/api/index.html](API Reference)
+[API Reference](https://docs.couchdb.org/en/stable/api/index.html)
