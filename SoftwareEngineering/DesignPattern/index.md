@@ -23,8 +23,8 @@
    
     Define an interface for creating a single object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
-5. Lazy initialization	
-
+5. [Lazy initialization](./LazyInitialization/index.md)
+   
     Tactic of delaying the creation of an object, the calculation of a value, or some other expensive process until the first time it is needed. This pattern appears in the GoF catalog as "virtual proxy", an implementation strategy for the Proxy pattern.
 
 6. Multiton	
@@ -39,7 +39,7 @@
 
     Specify the kinds of objects to create using a prototypical instance, and create new objects from the 'skeleton' of an existing object, thus boosting performance and keeping memory footprints to a minimum.
 
-9. Resource acquisition is initialization (RAII)
+9.  Resource acquisition is initialization (RAII)
     
     Ensure that resources are properly released by tying them to the lifespan of suitable objects.
 
