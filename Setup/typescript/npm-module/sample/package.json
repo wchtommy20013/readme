@@ -1,0 +1,42 @@
+{
+    "name": "sample",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "index.d.ts",
+    "scripts": {
+        "watch": "tsc -watch -p ./",
+        "build": "tsc",
+        "dev": "tsc && node ./dist/index.js && tsc app --watch",
+        "prod": "tsc && node ./dist/index.js",
+        "start": "node ./dist/index.js",
+        "test": "mocha --require ts-node/register lib/test/**/*.test.ts",
+        "prepare": "tsc"
+    },
+    "author": "Tommy",
+    "license": "ISC",
+    "dependencies": {
+        "@types/deep-equal": "1.0.1",
+        "@types/mysql": "^2.15.10",
+        "@types/node-fetch": "2.3.7",
+        "crypto-ts": "1.0.2",
+        "deep-equal": "1.0.1",
+        "json-diff": "0.5.4",
+        "mysql": "^2.18.1",
+        "node-cache": "4.2.1",
+        "node-fetch": "2.6.0",
+        "ts-deepcopy": "0.1.4",
+        "ts-node": "8.1.0",
+        "ts-node-dev": "1.0.0-pre.39",
+        "typescript": "3.4.5"
+    },
+    "devDependencies": {
+        "@types/assert": "^1.4.2",
+        "@types/chai": "^4.1.7",
+        "@types/mocha": "^5.2.6",
+        "@types/node": "^12.0.4",
+        "assert": "^2.0.0",
+        "chai": "^4.2.0",
+        "mocha": "^6.1.4"
+    }
+}

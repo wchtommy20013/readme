@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Tests (sample)",
+            "cwd": "${workspaceFolder}/sample",
+            "program": "${workspaceFolder}/sample/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--require", "ts-node/register",
+                "-u", "tdd",
+                "--timeout", "999999",
+                "--colors", "--recursive",
+                "lib/test/**/*.test.ts"
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+
+    ]
+}

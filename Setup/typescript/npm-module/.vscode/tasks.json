@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+    "label": "Build and Watch",
+      "type": "typescript",
+      "tsconfig": "sample/tsconfig.json",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    }
+  ]
+}
