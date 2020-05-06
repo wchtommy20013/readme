@@ -2,27 +2,27 @@
 
 #### Ubuntu
 
-```
+```bash
 sudo apt-get install vsftpd libpam-pwdfile 
 sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig
 sudo vi /etc/vsftpd.conf  
 
 
-sudo adduser axftp
-sudo mkdir /home/axftp/ftp
-sudo chown nobody:nogroup /home/axftp/ftp
-sudo chmod a-w /home/axftp/ftp
+sudo adduser ftpuser
+sudo mkdir /home/ftpuser/ftp
+sudo chown nobody:nogroup /home/ftpuser/ftp
+sudo chmod a-w /home/ftpuser/ftp
 
-sudo ls -la /home/axftp/ftp
+sudo ls -la /home/ftpuser/ftp
 
-sudo mkdir /home/axftp/ftp/files
-sudo chown axftp:axftp /home/axftp/ftp/files
+sudo mkdir /home/ftpuser/ftp/files
+sudo chown ftpuser:ftpuser /home/ftpuser/ftp/files
 
-echo "vsftpd test file" | sudo tee /home/axftp/ftp/files/test.txt
-
+# echo "vsftpd test file" | sudo tee /home/ftpuser/ftp/files/test.txt
 ```
 
 
+```bash
 # Example config file /etc/vsftpd.conf
 #
 # The default compiled in settings are fairly paranoid. This sample file
@@ -170,18 +170,4 @@ cmds_denied=RMD
 # 使指令無效
 # DELE: 刪除檔案
 # RMD: 刪除目錄
-
-
-
 ```
-sudo useradd -M  -s /usr/sbin/nologin axftp
-sudo passwd axftp
-sudo htpasswd -cd /etc/vsftpd.passwd axftp
-```
-
-
-sudo mkdir /home/axftp  
-sudo chmod 777 /home/axftp  
-sudo mkdir /home/axftp/uploads  
-sudo chmod 777 /home/axftp/uploads  
-sudo chown axftp:ftp -R /home/axftp  

@@ -39,11 +39,11 @@ chkconfig httpd on
 chkconfig mariadb on
 
 
-# Firewall Setting
-sudo firewall-cmd --add-service=http --permanent
-sudo firewall-cmd --add-service=https --permanent
-firewall-cmd --list-all --permanent
-service firewalld restart
+# # Firewall Setting
+# sudo firewall-cmd --add-service=http --permanent
+# sudo firewall-cmd --add-service=https --permanent
+# firewall-cmd --list-all --permanent
+# service firewalld restart
 
 # PhpMyAdmin
 sudo yum install phpmyadmin -y
