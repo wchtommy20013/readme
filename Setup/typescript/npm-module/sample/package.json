@@ -16,16 +16,6 @@
     "author": "Tommy",
     "license": "ISC",
     "dependencies": {
-        "@types/deep-equal": "1.0.1",
-        "@types/mysql": "^2.15.10",
-        "@types/node-fetch": "2.3.7",
-        "crypto-ts": "1.0.2",
-        "deep-equal": "1.0.1",
-        "json-diff": "0.5.4",
-        "mysql": "^2.18.1",
-        "node-cache": "4.2.1",
-        "node-fetch": "2.6.0",
-        "ts-deepcopy": "0.1.4",
         "ts-node": "8.1.0",
         "ts-node-dev": "1.0.0-pre.39",
         "typescript": "3.4.5"
