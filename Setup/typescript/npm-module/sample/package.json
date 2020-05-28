@@ -5,6 +5,7 @@
     "main": "dist/index.js",
     "types": "index.d.ts",
     "scripts": {
+        "bin": "bin/sample.js x y",
         "watch": "tsc -watch -p ./",
         "build": "tsc",
         "dev": "tsc && node ./dist/index.js && tsc app --watch",
@@ -14,10 +15,10 @@
         "prepare": "tsc"
     },
     "author": "Tommy",
+    "bin": "bin/sample.js",
     "license": "ISC",
     "dependencies": {
         "ts-node": "8.1.0",
-        "ts-node-dev": "1.0.0-pre.39",
         "typescript": "3.4.5"
     },
     "devDependencies": {
